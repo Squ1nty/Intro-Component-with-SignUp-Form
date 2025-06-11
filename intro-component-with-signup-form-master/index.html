@@ -6,32 +6,64 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/errorStates.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
+  <main>
+    <div id="headingAndDescContainer">
+      <h1 id="mainHeading">Learn to code by watching others</h1>
+      <p id="mainDesc">
+        See how experienced developers solve problems in real-time. 
+        Watching scripted tutorials is great, but understanding how 
+        developers think is invaluable. 
+      </p>
+    </div>
+    <div id="subAndFormContainer">
+      <button id="subBtn" type="button" aria-label="subscription button">
+        Try it free 7 days then $20/mo. thereafter
+      </button>
+      <form id="signUpForm" novalidate>
+        <div id="firstNameContainer" class="inputContainer">
+          <input id="firstNameInput" type="text" placeholder="First Name" aria-label="Text Input for First Name">
+          <label id="firstNameErrorMsg" class="errorMsg" for="firstNameInput"></label>
+        </div>
+        <div id="lastNameContainer" class="inputContainer">
+          <input id="lastNameInput" type="text" placeholder="Last Name" aria-label="Text Input for Last Name">
+          <label id="lastNameErrorMsg" class="errorMsg" for="lastNameInput"></label>
+        </div>
+        <div id="emailAddressContainer" class="inputContainer">
+          <input id="emailAddressInput" type="text" placeholder="Email Address" aria-label="Text Input for Email Address">
+          <label id="emailAddressErrorMsg" class="errorMsg" for="emailAddressInput"></label>
+        </div>
+        <div id="passwordContainer" class="inputContainer">
+          <input id="passwordInput" type="text" placeholder="Password" aria-label="Text Input for Password">
+          <label id="passwordErrorMsg" class="errorMsg" for="passwordInput"></label>
+        </div>
+        <button id="submitBtn" type="submit" aria-label="submit button" >CLAIM YOUR FREE TRIAL</button>
+        <div id="termsContainer">
+          <p id="termsAndConditions">
+            By clicking the button, you are agreeing to our 
+            <span id="termsHyperLink">Terms and Services</span>
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Squ1nty">Vincent Dao</a>.
     </p>
   </footer>
 </body>
