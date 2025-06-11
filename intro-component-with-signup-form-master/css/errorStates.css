@@ -1,0 +1,8 @@
+#firstNameSVG, #lastNameSVG, 
+#emailAddressSVG, #passwordSVG{
+  display: none;
+}
+#firstNameSVG.active, #lastNameSVG.active, 
+#emailAddressSVG.active, #passwordSVG.active{
+  display: block;
+}
