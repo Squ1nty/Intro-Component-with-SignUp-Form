@@ -1,0 +1,112 @@
+@media(max-width: 424px){
+  main{
+    max-width: 424px;
+    height: 100dvh;
+    background: url("../images/bg-intro-desktop.png");
+  }
+  #colorFilterContainer{
+    flex-direction: column;
+    gap: 3.5rem;
+
+    padding: 1.5rem;
+  }
+  #headingAndDescContainer{
+    text-align: center;
+  }
+  #mainHeading{
+    font-size: 1.75rem;
+  }
+  #subAndFormContainer{
+    gap: 1.5rem;
+  }
+  #subBtn, #signUpForm{
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
+  }
+  #signUpForm{
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+#colorFilterContainer{
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 21, 21, 0.6)
+}
+#headingAndDescContainer{
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 100%, 100%);
+  gap: 1rem;
+}
+#mainDesc{
+  font-weight: 200;
+}
+#subAndFormContainer{
+  display: flex;
+  flex-direction: column;
+}
+#subBtn{
+  background-color: hsl(248, 32%, 49%);
+  border: none;
+  padding: 1.5rem 4rem;
+
+  border-radius: 0.75rem;
+  color: hsl(0, 100%, 100%);
+  font-weight: 200;
+}
+.boldText{
+  font-weight: 600;
+}
+#signUpForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 0.75rem;
+}
+.inputContainer, .inputField{
+  width: 100%;
+}
+.inputField{
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.5rem;
+}
+.inputField::placeholder{
+  font-weight: 600;
+}
+#submitBtn{
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 5px 0 hsl(154, 57%, 47%);
+}
+#termsContainer{
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+}
+#termsAndConditions{
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+}
+#termsHyperLink{
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: hsl(0, 100%, 74%);
+
+  cursor: pointer;
+}
