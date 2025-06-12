@@ -58,6 +58,8 @@
   border-radius: 0.75rem;
   color: hsl(0, 100%, 100%);
   font-weight: 200;
+
+  cursor: pointer;
 }
 .boldText{
   font-weight: 600;
@@ -79,20 +81,31 @@
   padding: 1rem 1.5rem;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 0.5rem;
+
+  cursor: pointer;
 }
 .inputField::placeholder{
   font-weight: 600;
 }
 #submitBtn{
   width: 100%;
-  padding: 1rem;
   border: none;
   border-radius: 0.5rem;
-
   color: hsl(0, 100%, 100%);
   font-weight: 500;
+  background-color: hsl(154, 56%, 45%);
+  outline-offset: 4px;
+  cursor: pointer;
+}
+#frontOfBtn{
+  display: block;
+  padding: 1rem;
   background-color: hsl(154, 59%, 51%);
-  box-shadow: 0 5px 0 hsl(154, 57%, 47%);
+  transform: translateY(-6px);
+  border-radius: 0.5rem;
+}
+#submitBtn:active #frontOfBtn{
+  transform: translateY(-2px);
 }
 #termsContainer{
   text-align: center;

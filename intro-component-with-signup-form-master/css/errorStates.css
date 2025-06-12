@@ -1,3 +1,8 @@
+#firstNameContainer, #lastNameContainer, 
+#emailAddressContainer, #passwordContainer{
+  position: relative;
+  text-align: right;
+}
 #firstNameSVG, #lastNameSVG, 
 #emailAddressSVG, #passwordSVG{
   display: none;
@@ -5,4 +10,28 @@
 #firstNameSVG.active, #lastNameSVG.active, 
 #emailAddressSVG.active, #passwordSVG.active{
   display: block;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.errorMsg{
+  color: hsl(0, 100%, 74%);
+  font-size: 0.65rem;
+}
+
+#firstNameInput.invalid, #lastNameInput.invalid, 
+#emailAddressInput.invalid, #passwordInput.invalid{
+  border: 2px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
+}
+
+#firstNameInput.invalid::placeholder, #lastNameInput.invalid::placeholder, 
+#emailAddressInput.invalid::placeholder, #passwordInput.invalid::placeholder{
+  color: hsl(0, 100%, 74%);
+}
+
+#firstNameInput.valid, #lastNameInput.valid, 
+#emailAddressInput.valid, #passwordInput.valid{
+  border: 2px solid hsl(135, 100%, 73%);
 }
